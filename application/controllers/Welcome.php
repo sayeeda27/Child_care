@@ -43,17 +43,28 @@ class Welcome extends CI_Controller {
 				  <p>once you click this link your email will be varified and you can login into system.</p>
 				  <p>Thanks</p>
 				  ";
-				  $config=array(
-					  'protocol'=>'smtp',
-					  'smtp_host'=>'smtpout.secureserver.net',
-					  'smtp_port' => 80,
-					  'smtp_user'=>'sayeda',
-					  'smtp_pass'=>'123123',
-					  'mailtype'=>'html',
-					  'charset'=>'iso-8859-1',
-					  'wordwrep'=>TRUE
+				//   $config=array(
+				// 	  'protocol'=>'smtp',
+				// 	  'smtp_host'=>'smtpout.secureserver.net',
+				// 	  'smtp_port' => 80,
+				// 	  'smtp_user'=>'sayeda',
+				// 	  'smtp_pass'=>'123123',
+				// 	  'mailtype'=>'html',
+				// 	  'charset'=>'iso-8859-1',
+				// 	  'wordwrep'=>TRUE
 
-				  );
+				//   );
+
+				  $config = Array(
+					'protocol'  => 'smtp',
+					'smtp_host' => 'ssl://smtp.googlemail.com',
+					'smtp_port' => '465',
+					'smtp_user' => 'someuser@gmail.com',
+					'smtp_pass' => 'password',
+					'mailtype'  => 'html',
+					'starttls'  => true,
+					'newline'   => "\r\n"
+				);
 				  $this->load->library('email',$config);
 				  $this->email->set_newline("\r\n");
 				  $this->email->from('weblession@gmail.com');
