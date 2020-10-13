@@ -59,15 +59,15 @@ class Welcome extends CI_Controller {
 					'protocol'  => 'smtp',
 					'smtp_host' => 'ssl://smtp.googlemail.com',
 					'smtp_port' => '465',
-					'smtp_user' => 'someuser@gmail.com',
-					'smtp_pass' => 'password',
+					'smtp_user' => 'chowdhurysayeda05@gmail.com',
+					'smtp_pass' => 'sayeda_05',
 					'mailtype'  => 'html',
 					'starttls'  => true,
 					'newline'   => "\r\n"
 				);
 				  $this->load->library('email',$config);
 				  $this->email->set_newline("\r\n");
-				  $this->email->from('weblession@gmail.com');
+				  $this->email->from('chowdhurysayeda05@gmail.com');
 				  $this->email->to($this->input->post('user_email'));
 				  $this->email->subject($subject);
 				  $this->email->message($message);
