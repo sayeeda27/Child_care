@@ -17,8 +17,5 @@
                 
         </form>
      </div>
-      <?php
-        echo $message;     
-     ?>
   </div>
 </div>
