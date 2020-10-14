@@ -73,7 +73,7 @@ class Welcome extends CI_Controller {
 				  $this->email->message($message);
 				  if($this->email->send()){
 					  $this->session->set_flashdata('message','Check in your email for mail varification mail');
-					  redirect('reg-log');
+					  redirect('welcome');
 				  }
 
 
@@ -95,7 +95,7 @@ class Welcome extends CI_Controller {
 			else{
 				$data['message']='<h1 style="align:center;">Invalid Link</h1>';
 			}
-			$this->load->view('login',$data);
+			$this->load->view('verification_email',$data);
 		}
 	}
 	
