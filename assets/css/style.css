@@ -321,14 +321,20 @@ ul.footer-link li a{
    padding-bottom: 30px;
    text-transform: capitalize;
 }
+.reg-form{
+    padding-top: 70px;
+    
+}
 .reg-form input{
     margin-bottom: 70px;
     border-radius: 10px;
     border-color:#505cfd;
+    width: 600px;
+    margin-left: 240px;
 }
 .reg-form input::placeholder{
     color: #000;
-    margin-left: 10px;
+    text-align: center;
 }
 .reg-form .reg-btn{
    margin-left: 500px;

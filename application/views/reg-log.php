@@ -7,7 +7,7 @@
         </div>
       </div>
     </div>
-     <div class="reg-form">
+     <div class="reg-form ">
        <?php
           if($this->session->flashdata('message')){
             echo '<div class="alert alert-succeess">
