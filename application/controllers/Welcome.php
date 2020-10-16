@@ -18,6 +18,7 @@ class Welcome extends CI_Controller {
 		 $this->load->view('templates/header');
 
 		 $this->load->view('reg-log');
+		 $this->load->view('templates/footer');
 		
 	}
 
@@ -44,25 +45,45 @@ class Welcome extends CI_Controller {
 				  <p>Thanks</p>
 				  ";
 
-				//  
+				//   $config = Array(
+				// 	'protocol'  => 'smtp',
+				// 	'smtp_host' => 'ssl://smtp.googlemail.com',
+				// 	'smtp_port' => '465',
+				// 	'smtp_user' => 'chowdhurysayeda05@gmail.com',
+				// 	'smtp_pass' => 'sayeda_05',
+				// 	'mailtype'  => 'html',
+				// 	'starttls'  => true,
+				// 	'newline'   => "\r\n"
+				// );
+				//   $this->load->library('email',$config);
+				//   $this->email->set_newline("\r\n");
+				//   $this->email->from('chowdhurysayeda05@gmail.com');
+				//   $this->email->to($this->input->post('user_email'));
+				//   $this->email->subject($subject);
+				//   $this->email->message($message);
+				//   if($this->email->send()){
+				// 	  $this->session->set_flashdata('message','Check in your email for mail varification mail');
+				// 	  redirect('welcome');
+				//   }
 				function send_mail(){
 					$config['protocol'] = 'smtp';
 					$config['smtp_host'] = 'ssl://smtp.googlemail.com';
 					$config['smtp_port'] = 465;
-					$config['smtp_user'] = 'xyz@gmail.com';
-					$config['smtp_pass'] = 'xxxxxxx';
+					$config['smtp_user'] = 'chowdhurysayeda05@gmail.com';
+					$config['smtp_pass'] = 'sayeda_05';
 					
 					$this->load->library('email', $config);
 					$this->email->set_newline("\r\n");
 					
-					$this->email->from('neginph@gmail.com', 'Negin Phosphate Shomal');
-					$this->email->to('neginfos@yahoo.com');
+					$this->email->from('chowdhurysayeda05@gmail.com', 'Negin Phosphate Shomal');
+					$this->email->to($this->input->post('user_email'));
 					$this->email->subject('This is an email test');
 					$this->email->message('It is working. Great!');
 					
 					if($this->email->send())
 					{
 						echo 'Your email was sent, successfully.';
+						redirect('welcome');
 					}
 					
 					else
@@ -90,8 +111,7 @@ class Welcome extends CI_Controller {
 			else{
 				$data['message']='<h1 style="align:center;">Invalid Link</h1>';
 			}
-			$this->load->view('templates/header');
-			$this->load->view('verification_email',$data);
+			$this->load->view('login',$data);
 		}
 	}
 	

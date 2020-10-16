@@ -1,4 +1,4 @@
-<div class="reg-area text-center">
+<div class="reg-area text-center mb">
   <div class="container">
     <div class="row">
       <div class="col-xl-12">
@@ -7,7 +7,7 @@
         </div>
       </div>
     </div>
-     <div class="reg-form ">
+     <div class="log-form">
        <?php
           if($this->session->flashdata('message')){
             echo '<div class="alert alert-succeess">
@@ -15,14 +15,15 @@
                  </div>';
           }
        ?>
-        <form method="post" action="<?php echo base_url();?>welcome/validation">
+        <form method="post" action="<?php echo base_url();?>login/index">
                <input type="text" class="form-control" name="user_name" placeholder="user name" value="<?php echo set_value('user_name');?>">
                 <span class="text-danger"><?php echo form_error('user_name'); ?></span>
                 <input type="text" class="form-control" name="user_email" placeholder="user email" value="<?php echo set_value('user_email');?>">
                 <span class="text-danger"><?php echo form_error('user_email'); ?></span>
                 <input type="password" class="form-control" name="user_password" placeholder="user password" value="<?php echo set_value('user_password');?>">
                 <span class="text-danger"><?php echo form_error('user_password'); ?></span>
-                <button type="submit" name ="register" value="Welcome" class="btn" >Register</button>
+                <button type="submit" name ="register" value="Welcome" 
+                class="btn" >SignUp</button>
                 
         </form>
      </div>

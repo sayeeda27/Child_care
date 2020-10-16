@@ -1,4 +1,4 @@
-<!-- <?php
+ <?php
 
 class Login_model extends CI_Model {
     function can_login($email,$password){
@@ -24,13 +24,9 @@ class Login_model extends CI_Model {
                     return 'First verified your email address';
                 }
             }
-            // else
-            // {
-            //     return 'wrong email address';
-            // }
         }
 
     }
 
 }
-?> -->
+?>

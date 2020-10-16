@@ -211,9 +211,6 @@ ul{
     margin-bottom: 30px;
 
 }
-.news-meta span{
-
-}
 .meta-line{
     background: #444;
     height: 2px;
@@ -323,18 +320,15 @@ ul.footer-link li a{
 }
 .reg-form{
     padding-top: 70px;
-    
 }
 .reg-form input{
     margin-bottom: 70px;
     border-radius: 10px;
     border-color:#505cfd;
-    width: 600px;
-    margin-left: 240px;
+    width: 550px;
 }
 .reg-form input::placeholder{
     color: #000;
-    text-align: center;
 }
 .reg-form .reg-btn{
    margin-left: 500px;
@@ -348,4 +342,18 @@ ul.footer-link li a{
 }
 .insert{
     margin-bottom: 30px;
+}
+.log-form{
+    margin-top: 60px;
+}
+.log-form input{
+    margin-bottom: 70px;
+    border-radius: 10px;
+    border-color:#505cfd;
+    width: 500px;
+    margin-left: 300px;
+}
+.log-form input::placeholder{
+    color: #000;
+    text-align: center;
 }

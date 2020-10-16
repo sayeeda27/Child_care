@@ -17,7 +17,7 @@
                 <input type="text" class="form-control" name="pob"  placeholder="Place of Birth">
                 <input type="text" class="form-control" name="peradd" placeholder="Permanent Address">
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 ">
                 <input type="text" class="form-control" name="dob"  placeholder="Date Of Birth">
                 <input type="text" class="form-control" name="moname"  placeholder="Mother name">
                 <input type="text" class="form-control" name="preadd" placeholder="Present Address">
