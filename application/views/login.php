@@ -13,6 +13,13 @@
       </div>
     </div>
      <div class="log-form">
+       <?php
+           if($this->session->flashdata('message')){
+            echo '<div class="alert alert-succeess">
+                     '.$this->session->flashdata("message").'
+                 </div>';
+          }
+       ?>
         <form method="post" action="<?php echo base_url();?>welcome/validation">
                 <input type="text" class="form-control" name="user_email" placeholder="user email" value="<?php echo set_value('user_email');?>">
                 <span class="text-danger"><?php echo form_error('user_email'); ?></span>

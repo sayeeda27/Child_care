@@ -15,7 +15,7 @@
                  </div>';
           }
        ?>
-        <form method="post" action="<?php echo base_url();?>login/index">
+        <form method="post" action="<?php echo base_url();?>welcome/validation">
                <input type="text" class="form-control" name="user_name" placeholder="user name" value="<?php echo set_value('user_name');?>">
                 <span class="text-danger"><?php echo form_error('user_name'); ?></span>
                 <input type="text" class="form-control" name="user_email" placeholder="user email" value="<?php echo set_value('user_email');?>">
@@ -23,7 +23,7 @@
                 <input type="password" class="form-control" name="user_password" placeholder="user password" value="<?php echo set_value('user_password');?>">
                 <span class="text-danger"><?php echo form_error('user_password'); ?></span>
                 <button type="submit" name ="register" value="Welcome" 
-                class="btn" >SignUp</button>
+                class="btn" >Signup</button>
                 
         </form>
      </div>

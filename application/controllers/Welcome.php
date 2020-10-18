@@ -30,10 +30,10 @@ class Welcome extends CI_Controller {
 			  $verification_key=md5(rand());
 			  $password=md5('user_password');
 			  $data=array(
-				  'name'=> $this->input->post('user_name'),
-				  'email'=> $this->input->post('user_email'),
-				  'password'=> $password,
-				  'verification_key'=>$verification_key
+				  'us_name'=> $this->input->post('user_name'),
+				  'us_email'=> $this->input->post('user_email'),
+				  'us_password'=> $password,
+				  'us_verification_key'=>$verification_key
 			  );
 			  $id=$this->regi_model->insert($data);
 			  if($id>0){
@@ -45,26 +45,6 @@ class Welcome extends CI_Controller {
 				  <p>Thanks</p>
 				  ";
 
-				//   $config = Array(
-				// 	'protocol'  => 'smtp',
-				// 	'smtp_host' => 'ssl://smtp.googlemail.com',
-				// 	'smtp_port' => '465',
-				// 	'smtp_user' => 'chowdhurysayeda05@gmail.com',
-				// 	'smtp_pass' => 'sayeda_05',
-				// 	'mailtype'  => 'html',
-				// 	'starttls'  => true,
-				// 	'newline'   => "\r\n"
-				// );
-				//   $this->load->library('email',$config);
-				//   $this->email->set_newline("\r\n");
-				//   $this->email->from('chowdhurysayeda05@gmail.com');
-				//   $this->email->to($this->input->post('user_email'));
-				//   $this->email->subject($subject);
-				//   $this->email->message($message);
-				//   if($this->email->send()){
-				// 	  $this->session->set_flashdata('message','Check in your email for mail varification mail');
-				// 	  redirect('welcome');
-				//   }
 				function send_mail(){
 					$config['protocol'] = 'smtp';
 					$config['smtp_host'] = 'ssl://smtp.googlemail.com';
@@ -72,7 +52,7 @@ class Welcome extends CI_Controller {
 					$config['smtp_user'] = 'chowdhurysayeda05@gmail.com';
 					$config['smtp_pass'] = 'sayeda_05';
 					
-					$this->load->library('email', $config);
+					//$this->load->library('email', $config);
 					$this->email->set_newline("\r\n");
 					
 					$this->email->from('chowdhurysayeda05@gmail.com', 'Negin Phosphate Shomal');

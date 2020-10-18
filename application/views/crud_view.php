@@ -14,33 +14,43 @@
      <table class="table">
         <thead class="thead-dark">
             <tr>
-                <th>Si</th>
-                <th>Full_name</th>
-                <th>Date_O_Birth</th>
-                <th>Father_name</th>
-                <th>Mother_name</th>
-                <th>P_of_Birth</th>
-                <th>Pre_add</th>
-                <th>Per_Add</th>
-                <th>Full_name</th>
+                <th>Birth id</th>
+                <th>Date of regi</th>
+                <th>Date Of issue</th>
+                <th>Birth regi no</th>
+                <th>Full name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Place of birth</th>
+                <th>Father name</th>
+                <th>Father ntionality</th>
+                <th>Mother name</th>
+                <th>Mother ntionality</th>
+                <th>permanent addr</th>
+                <th>Present addr</th>
                 <th colspan="2">Action</th>
             </tr>
         </thead>
         <tbody>
         <?php foreach($reg_data as $r_data): ?>
         <tr>
-          <td> <?php  echo  $r_data->si; ?> </td>
+          <td> <?php  echo  $r_data->br_id; ?> </td>
+          <td><?php  echo  $r_data->d_o_r; ?></td>
+          <td><?php  echo  $r_data->d_o_i; ?></td>
+          <td><?php  echo  $r_data->birth_reg_no; ?></td>
+          <td><?php  echo  $r_data->full_name; ?></td>
+          <td><?php  echo  $r_data->d_o_b; ?></td>
+          <td><?php  echo  $r_data->gender; ?></td>
+          <td><?php  echo  $r_data->p_o_b; ?></td>
           <td><?php  echo  $r_data->f_name; ?></td>
-          <td><?php  echo  $r_data->dob; ?></td>
-          <td><?php  echo  $r_data->fa_name; ?></td>
-          <td><?php  echo  $r_data->mo_name; ?></td>
-          <td><?php  echo  $r_data->pob; ?></td>
-          <td><?php  echo  $r_data->pre_add; ?></td>
-          <td><?php  echo  $r_data->per_add; ?></td>
-          <td><?php  echo  $r_data->mob_num; ?></td>
+          <td><?php  echo  $r_data->f_nationality; ?></td>
+          <td><?php  echo  $r_data->m_name; ?></td>
+          <td><?php  echo  $r_data->m_nationality; ?></td>
+          <td><?php  echo  $r_data->permanent_addr; ?></td>
+          <td><?php  echo  $r_data->present_addr; ?></td>
           <td>
-          <a  class="btn" href="<?php echo base_url(); ?>crud/editData/<?php echo $r_data->si; ?>">Edit </a>
-          <a  class="btn" href="<?php echo base_url(); ?>crud/deleteData/<?php echo $r_data->si; ?>">Delete </a>
+          <a class="btn crud-btn" href="<?php echo base_url(); ?>crud/editData/<?php echo $r_data->br_id; ?>">Edit </a>
+          <a class="btn crud-btn " href="<?php echo base_url(); ?>crud/deleteData/<?php echo $r_data->br_id; ?>">Delete </a>
           </td>
           
         </tr>

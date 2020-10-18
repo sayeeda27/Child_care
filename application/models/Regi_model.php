@@ -2,21 +2,21 @@
 
 class Regi_model extends CI_Model {
     function insert($data){
-        $this->db->insert('register',$data);
+        $this->db->insert('tbl_user',$data);
         return $this->db->insert_id();
     }
     function verif_email($key)
     {
-        $this->db->where('verification_key',$key);
-        $this->db->where('is_email_verified','no');
-        $query=$this->db->get('register');
+        $this->db->where('us_verification_key',$key);
+        $this->db->where('us_is_email_verified','no');
+        $query=$this->db->get('tbl_user');
         if($query->num_rows()>0)
         {
             $data=array(
-                'is_email_verified' =>'yes'
+                'us_is_email_verified' =>'yes'
             );
-            $this->db->where('verification_key',$key);
-            $this->db->update('register',$data);
+            $this->db->where('us_verification_key',$key);
+            $this->db->update('tbl_user',$data);
 
         }
         else{

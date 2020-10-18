@@ -331,7 +331,7 @@ ul.footer-link li a{
     color: #000;
 }
 .reg-form .reg-btn{
-   margin-left: 500px;
+   margin-left: 80px;
 }
 /* crud_area */
 .crud-area {
@@ -339,6 +339,10 @@ ul.footer-link li a{
 }
 .crud-title{
     margin-bottom: 50px;
+}
+.crud-tbl .crud-btn{
+    padding: 5px 7px;
+    font-size: 13px;
 }
 .insert{
     margin-bottom: 30px;
@@ -356,4 +360,7 @@ ul.footer-link li a{
 .log-form input::placeholder{
     color: #000;
     text-align: center;
+}
+.reg-input input{
+    width: 1120px;
 }

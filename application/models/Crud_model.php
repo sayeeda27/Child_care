@@ -5,14 +5,14 @@ class Crud_model extends CI_Model {
 	
 	public function getAllData()
 	{
-        $query=$this->db->get('birth_regg');
+        $query=$this->db->get('tbl_birth_register');
         
         if($query){
             return $query->result();
         }
     }
     public function insertDatta($data){
-        $query=$this->db->insert('birth_regg',$data);
+        $query=$this->db->insert('tbl_birth_register',$data);
         if($query){
             return true;
         }
@@ -22,8 +22,8 @@ class Crud_model extends CI_Model {
     }
 
     public function deleteItem($si){
-        $this->db->where('si',$si);
-        $query=$this->db->delete('birth_regg');
+        $this->db->where('br_id',$si);
+        $query=$this->db->delete('tbl_birth_register');
         if($query){
             return true;
         }else{
@@ -32,16 +32,16 @@ class Crud_model extends CI_Model {
     }
 
     public function getsingleData($si){
-        $this->db->where('si',$si);
-        $query=$this->db->get('birth_regg');
+        $this->db->where('br_id',$si);
+        $query=$this->db->get('tbl_birth_register');
         if($query){
             return $query->row();
         }
     }
 
     public function updateDatta($data,$si){
-        $this->db->where('si',$si);
-        $query=$this->db->update('birth_regg',$data);
+        $this->db->where('br_id',$si);
+        $query=$this->db->update('tbl_birth_register',$data);
         if($query){
             return true;
         }
