@@ -1,19 +1,22 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+    defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login
- extends CI_Controller {
+class Login extends CI_Controller {
 
 	   public function __construct()
 	    {
-	  	  parent::__construct();
+            parent::__construct();
+            if($this->session->userdata('id_user'))
+				{
+				redirect('private_area');
+				}
 	  	
-		
+            $this->load->library('encryption');
 	        $this->load->model('login_model');
 
 	    }
 	
-	public function index()
+	 function index()
 	{
 		
 		 $this->load->view('templates/header');
@@ -29,7 +32,7 @@ class Login
              $result=$this->login_model->can_login($this->input->post('user_email'),
              $this->input->post('user_password'));
              if($result==''){
-                redirect('pages');
+                redirect('private_area');
              }
              else{
                    $this->session->set_flashdata('message',$result);

@@ -20,15 +20,16 @@
                  </div>';
           }
        ?>
-        <form method="post" action="<?php echo base_url();?>welcome/validation">
-                <input type="text" class="form-control" name="user_email" placeholder="user email" value="<?php echo set_value('user_email');?>">
-                <span class="text-danger"><?php echo form_error('user_email'); ?></span>
-                <input type="password" class="form-control" name="user_password" placeholder="user password" value="<?php echo set_value('user_password');?>">
-                <span class="text-danger"><?php echo form_error('user_password'); ?></span>
-                <button type="submit" name ="login" class="btn" >Login</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url();?>welcome">Register</a>
-                
-        </form>
+<form method="post" action="<?php echo base_url();?>login/validation">
+    <input type="text" class="form-control" name="user_email" placeholder="user email" value="<?php echo set_value('user_email');?>">
+    <span class="text-danger"><?php echo form_error('user_email'); ?></span>
+    <input type="password" class="form-control" name="user_password" placeholder="user password" value="<?php echo set_value('user_password');?>">
+    <span class="text-danger"><?php echo form_error('user_password'); ?></span>
+    <button type="submit" name ="login" class="btn" value="Login
+    " >Login</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url();?>welcome">Register</a>
+        
+</form>
      </div>
   </div>
 </div>
