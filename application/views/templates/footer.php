@@ -51,19 +51,19 @@
                        <ul class="footer-news" >
                            <li >
                               <div class="news-thumb">
-                                  <a href="#"> <img src="<?php echo base_url();?>assets/img/kid12.jpg" alt="feature_img"></a>
+                                  <a href="<?php echo site_url('Pages/news') ?>"> <img src="<?php echo base_url();?>assets/img/kid12.jpg" alt="feature_img"></a>
                               </div>
                               <div class="news-title">
-                                  <h4><a href="#">How to improve new born baby immune system</a></h4>
+                                  <h4><a href="<?php echo site_url('Pages/news') ?>">How to improve new born baby immune system</a></h4>
                                   <span>27th sep,2020</span>
                               </div>
                            </li>
                            <li>
                               <div class="news-thumb">
-                                  <a href="#"> <img src="<?php echo base_url();?>assets/img/kid12.jpg" alt="feature_img"></a>
+                                  <a href="<?php echo site_url('Pages/news') ?>"> <img src="<?php echo base_url();?>assets/img/kid12.jpg" alt="feature_img"></a>
                               </div>
                               <div class="news-title">
-                                  <h4><a href="#">How to improve new born baby immune system</a></h4>
+                                  <h4><a href="<?php echo site_url('Pages/news') ?>">How to improve new born baby immune system</a></h4>
                                   <span>27th sep,2020</span>
                               </div>
                            </li>

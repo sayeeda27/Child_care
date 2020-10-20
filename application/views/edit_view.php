@@ -13,12 +13,10 @@
             
           <div class="row">
               <div class="col-xl-6">
-                <input type="text" class="form-control" name="dor"  value="<?php echo $singleData->d_o_r
-                ; ?>" placeholder="Date of Registration">
+                <input type="text" class="form-control" name="dor"  value="<?php echo $singleData->d_o_r; ?>">
               </div>
               <div class="col-xl-6">
-                <input type="text" class="form-control" name="doi" value="<?php echo $singleData->d_o_i
-                  ; ?>"  placeholder="Date of issue">
+                <input type="text" class="form-control" name="doi" value="<?php echo $singleData->d_o_i; ?>">
               </div>
           </div>
           <div class="reg-input">

@@ -22,7 +22,7 @@ class Login extends CI_Controller {
 		 $this->load->view('templates/header');
 
 		 $this->load->view('login');
-		
+		 $this->load->view('templates/footer');
     }
 
     function validation(){

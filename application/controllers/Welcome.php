@@ -12,8 +12,7 @@ class Welcome extends CI_Controller {
 				}
 	  	
 			$this->load->library('encryption');
-			$this->load->model('R
-			egi_model');
+			$this->load->model('Regi_model');
 
 	    }
 	
@@ -40,7 +39,7 @@ class Welcome extends CI_Controller {
 				  'us_password'=> $encrypted_password,
 				  'us_verification_key'=>$verification_key
 			  );
-			  $id=$this->regi_model->insert($data);
+			  $id=$this->Regi_model->insert($data);
 			  if($id>0){
 				  $subject="please verify email for login";
 				  $message="<p>Hi ".$this->input->post('user_name')."</p>

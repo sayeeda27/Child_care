@@ -1,10 +1,5 @@
-<div class="reg-area text-center">
+<div class="reg-area text-center mb">
   <div class="container">
-  <?php
-
-     echo $message;
-
-  ?>
     <div class="row">
       <div class="col-xl-12">
         <div class="reg-title text-center">
@@ -25,8 +20,7 @@
     <span class="text-danger"><?php echo form_error('user_email'); ?></span>
     <input type="password" class="form-control" name="user_password" placeholder="user password" value="<?php echo set_value('user_password');?>">
     <span class="text-danger"><?php echo form_error('user_password'); ?></span>
-    <button type="submit" name ="login" class="btn" value="Login
-    " >Login</button>
+    <button type="submit" name ="login" class="btn" value="Login" >Login</button>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url();?>welcome">Register</a>
         
 </form>

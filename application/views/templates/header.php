@@ -19,7 +19,7 @@
               <div class="row">
                  <div class="col-xl-3 d-flex align-items-center">
                   <div class="logo">
-                    <a href="#"><img src="<?php echo base_url();?>assets/img/Child Care.png" alt=""></a>
+                    <a href="<?php echo site_url('Pages/home') ?>"><img src="<?php echo base_url();?>assets/img/Child Care.png" alt=""></a>
                   </div>
                  </div>
                  <div class="col-xl-9">
@@ -41,8 +41,8 @@
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                   <a class="dropdown-item" href="<?php echo site_url('Pages/vaccine') ?>">EPI Vaccine</a>
                                   <a class="dropdown-item" href="<?php echo site_url('Crud/index') ?>">Registered Baby</a>
-                                  <a class="dropdown-item" href="#">Login</a>
-                                  <a class="dropdown-item" href="#">Logout</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Login/index') ?>">Login</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Private_area/logout') ?>">Logout</a>
                                 </div>
                               </div>
                             </li>
