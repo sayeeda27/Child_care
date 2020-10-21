@@ -8,7 +8,7 @@ class Login extends CI_Controller {
             parent::__construct();
             if($this->session->userdata('id_user'))
 				{
-				redirect('private_area');
+				redirect('Private_area');
 				}
 	  	
             $this->load->library('encryption');
@@ -32,7 +32,7 @@ class Login extends CI_Controller {
              $result=$this->login_model->can_login($this->input->post('user_email'),
              $this->input->post('user_password'));
              if($result==''){
-                redirect('private_area');
+                redirect('Private_area');
              }
              else{
                    $this->session->set_flashdata('message',$result);

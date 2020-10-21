@@ -3,14 +3,11 @@
     <div class="row">
       <div class="col-xl-12">
         <div class="crud-title text-center">
-            <h4>Registered New Born Baby Document</h4>
+            <h4>Registered Baby</h4>
         </div>
       </div>
     </div>
      <div class="crud-tbl">
-     <div class="insert float-left">
-         <a  class="btn" href="<?php echo site_url('Pages/regi') ?>">Insert </a>
-     </div>
      <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -49,8 +46,7 @@
           <td><?php  echo  $r_data->permanent_addr; ?></td>
           <td><?php  echo  $r_data->present_addr; ?></td>
           <td>
-          <a class="btn crud-btn" href="<?php echo base_url(); ?>crud/editData/<?php echo $r_data->br_id; ?>">Edit </a>
-          <!-- <a class="btn crud-btn " href="<?php echo base_url(); ?>crud/deleteData/<?php echo $r_data->br_id; ?>">Delete </a> -->
+          <a class="btn crud-btn " href="<?php echo base_url(); ?>Admin_crud/deleteData/<?php echo $r_data->br_id; ?>">Delete </a>
           </td>
           
         </tr>
@@ -58,30 +54,11 @@
         </tbody>
       </table>
       </table>
-         <?php if($this->session->flashdata('error')): ?>
-            <div  style="color:#FFF;align:center;" class="bg-danger">
-            <?php echo $this->session->flashdata('error'); ?>
-            </div>
-         <?php endif; ?>
-
-
-        <?php if($this->session->flashdata('inserted')): ?>
-            <div style="color:#FFF;align:center;" class="bg-success">
-            <?php echo $this->session->flashdata('inserted'); ?>
-            </div>
-      <?php endif; ?>
-
-            <!-- <?php if($this->session->flashdata('deleted')): ?>
+            <?php if($this->session->flashdata('deleted')): ?>
             <div style="color:#FFF;align:center;" class="bg-danger">
             <?php echo $this->session->flashdata('deleted'); ?>
             </div>
-        <?php endif; ?> -->
-
-        <?php if($this->session->flashdata('updated')): ?>
-            <div style="color:#FFF;align:center;" class="bg-success">
-            <?php echo $this->session->flashdata('updated'); ?>
-            </div>
-       <?php endif; ?>
+        <?php endif; ?>
      </div>
   </div>
 </div>

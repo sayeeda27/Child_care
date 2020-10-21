@@ -16,7 +16,7 @@ class Login_model extends CI_Model
       //exit();
       //$key = 'APANtByIGI1BpVXZTJgcsAG8GZl8pdwwa84';
 
-     $store_password = $this->encryption->decrypt($row->password);
+     $store_password = $this->encryption->decrypt($row->us_password);
 
      //print_r($s)
      // $my_pass = "121212";

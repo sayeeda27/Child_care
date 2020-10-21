@@ -62,14 +62,14 @@ class Crud extends CI_Controller {
 		redirect('crud');
 	}
 	
-	public function deleteData($si){
-		$this->load->model('crud_model');
-		$result=$this->crud_model->deleteItem($si);
-		if($result==true){
-			$this->session->set_flashdata('deleted','Data has been deleted!!');
-		}
-		redirect('crud');
-	}
+	// public function deleteData($si){
+	// 	$this->load->model('crud_model');
+	// 	$result=$this->crud_model->deleteItem($si);
+	// 	if($result==true){
+	// 		$this->session->set_flashdata('deleted','Data has been deleted!!');
+	// 	}
+	// 	redirect('crud');
+	// }
 
 
 	public function editData($si){
@@ -89,9 +89,9 @@ class Crud extends CI_Controller {
         $this->form_validation->set_rules('gender','gender','trim|required');
         $this->form_validation->set_rules('pob','place of birth','trim|required');
 		$this->form_validation->set_rules('fname','father name','trim|required');
-		$this->form_validation->set_rules('fnationality','father nanationality','trim|required');
+		$this->form_validation->set_rules('fnationality','father nationality','trim|required');
 		$this->form_validation->set_rules('mname','mother name','trim|required');
-		$this->form_validation->set_rules('mnationality','mother nanationality','trim|required');
+		$this->form_validation->set_rules('mnationality','mother nationality','trim|required');
 		$this->form_validation->set_rules('peraddr','permanent address','trim|required');
 		$this->form_validation->set_rules('preaddr','present address','trim|required');
 

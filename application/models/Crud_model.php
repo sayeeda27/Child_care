@@ -13,7 +13,8 @@ class Crud_model extends CI_Model {
     }
     public function insertDatta($data){
         $query=$this->db->insert('tbl_birth_register',$data);
-        if($query){
+        $query_admin=$this->db->insert('tbl_admin_view',$data);
+        if($query && $query_admin){
             return true;
         }
         else{

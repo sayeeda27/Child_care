@@ -9,8 +9,8 @@
       
     </div>
      <div class="reg-form">
-     <form method="post" action="<?php echo base_url(); ?>crud/update/<?php echo $singleData->si; ?>">
-            
+     <form method="post" action="<?php echo base_url(); ?>Crud/update/<?php echo $singleData->br_id; ?>">
+
           <div class="row">
               <div class="col-xl-6">
                 <input type="text" class="form-control" name="dor"  value="<?php echo $singleData->d_o_r; ?>">
