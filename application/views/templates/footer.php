@@ -8,8 +8,8 @@
                         <ul class="contact-list">
                             <li>1 (800) 686 6680</li>
                             <li>info.sayeda@gmail.com</li>
-                            <li>40 bario street 133/2</li>
-                            <li>NewYork city,USA</li>
+                            <li>12/13 Komlabagan, Majumdari</li>
+                            <li>Sylhet,Bangladesh</li>
                         </ul>
                         <div class="footer-icon">
                             <a href="#" tabinex=-1>

@@ -32,17 +32,30 @@
                             <li><a href="<?php echo site_url('Pages/service') ?>">Services</a></li>
                             <li><a href="<?php echo site_url('Pages/alert') ?>">Send Alert</a></li>
                             <li>
-                              <div class="dropdown">
-                                <a class=" dropdown-toggle drop-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" 
+                              <div class="dropdown dropdown-item-text ">
+                                <a class=" drop-btn drop_icon" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" 
                                 aria-expanded="false">
-                                 Dropdown Menu
+                                <i class="fas fa-user-circle"></i>
                                 </a>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">User Login</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/logout') ?>">User Logout</a>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="dropdown dropdown-item-text ">
+                                <a class=" drop-btn drop_icon" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                <i class="fas fa-align-justify"></i>
+                                </a>
+
+                                <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
                                   <a class="dropdown-item" href="<?php echo site_url('Pages/vaccine') ?>">EPI Vaccine</a>
                                   <a class="dropdown-item" href="<?php echo site_url('Crud/index') ?>">Registered Baby</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Login/index') ?>">Login</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Private_area/logout') ?>">Logout</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">Login</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/logout') ?>">Logout</a>
                                 </div>
                               </div>
                             </li>

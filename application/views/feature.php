@@ -1,27 +1,29 @@
-<div class="feature-area  pb-30 mb">
- <div class="container">
- <div class="row">
-           <div class="col-xl-12">
-             <div class="area-title text-center">
-               <h3>About Us</h3>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Vel mollitia ipsum quis <br>cumque quos sunt voluptates non, quaerat accusamus ipsam </p>
-             </div>
-           </div>
-        </div>
-   <div class="row">
-      <div class="col-xl-6">
-         <div class="feature-text">
-           <h3>We are here to aware you about your child immune system. </h3>
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-           Vel mollitia ipsum quis cumque quos sunt voluptates non, quaerat accusamus ipsam tenetur iste voluptatum reprehenderit et consequatur magni saepe nam? Nostrum?</p>
-           <a href="#" class="btn">Read more</a>
-         </div>
-      </div>
-      <div class="col-xl-6">
-        <div class="feature-img">
-         <img src="<?php echo base_url();?>assets/img/kid.jpg" alt="feature_img">
-        </div>
-      </div>
-   </div>
- </div>
-</div>
+<section class="feature-area">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-6 ">
+                <div class="about-img">
+                  <img src="<?php echo base_url();?>assets/img/Rectangle1.jpg" alt=""  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel text-left">
+                  <h1>About us</h1>
+                  <p class="pt-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam
+                    voluptatum, id ex ratione omnis reiciendis possimus officiis.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat
+                    ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic
+                    expedita nemo sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+

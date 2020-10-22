@@ -12,7 +12,7 @@
            <div class="col-xl-4">
               <div class="latest-news">
                  <div class="news-thumb">
-                    <a href="#"><img src="<?php echo base_url();?>assets/img/Rectangle 1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo base_url();?>assets/img/kid11.jpg" alt=""></a>
                  </div>
                  <div class="news-content">
                    <h3><a href="#">how to increase child immune system</a></h3>
@@ -29,7 +29,7 @@
            <div class="col-xl-4">
               <div class="latest-news">
                  <div class="news-thumb">
-                    <a href="#"><img src="<?php echo base_url();?>assets/img/Rectangle 1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo base_url();?>assets/img/kid12.jpg" alt=""></a>
                  </div>
                  <div class="news-content">
                    <h3><a href="#">how to increase child immune system</a></h3>
@@ -46,7 +46,7 @@
            <div class="col-xl-4">
               <div class="latest-news">
                  <div class="news-thumb">
-                    <a href="#"><img src="<?php echo base_url();?>assets/img/Rectangle 1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo base_url();?>assets/img/kid13.jpg" alt=""></a>
                  </div>
                  <div class="news-content">
                    <h3><a href="#">how to increase child immune system</a></h3>
