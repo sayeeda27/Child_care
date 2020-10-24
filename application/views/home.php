@@ -9,7 +9,8 @@
           </div>
         </div>
 
-        <div class="single-slide text-center d-flex align-items-center justify-content-center" style="background-image:url('<?php echo base_url();?>assets/img/kid14.jpg');">
+        <div class="single-slide text-center d-flex align-items-center justify-content-center" 
+        style="background-image:url('<?php echo base_url();?>assets/img/kid14.jpg');">
           <div class="slider-inner">
             <h2>EPI Reminder</h2>
             <p>Boost your child immune system!!!</p>

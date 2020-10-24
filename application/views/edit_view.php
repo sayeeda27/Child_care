@@ -11,26 +11,16 @@
      <div class="reg-form">
      <form method="post" action="<?php echo base_url(); ?>Crud/update/<?php echo $singleData->br_id; ?>">
 
-          <div class="row">
-              <div class="col-xl-6">
-                <input type="text" class="form-control" name="dor"  value="<?php echo $singleData->d_o_r; ?>">
-              </div>
-              <div class="col-xl-6">
-                <input type="text" class="form-control" name="doi" value="<?php echo $singleData->d_o_i; ?>">
-              </div>
-          </div>
           <div class="reg-input">
-              <input type="text" class="form-control" name="reg_no" value="<?php echo $singleData->birth_reg_no; ?>" >
               <input type="text" class="form-control" name="fullname"  value="<?php echo $singleData->full_name; ?>" >
               <input type="text" class="form-control" name="dob"  value="<?php echo $singleData->d_o_b; ?>">
               <input type="text" class="form-control" name="gender" value="<?php echo $singleData->gender; ?>">
               <input type="text" class="form-control" name="pob" value="<?php echo $singleData->p_o_b; ?>">
               <input type="text" class="form-control" name="fname" value="<?php echo $singleData->f_name; ?>">
-              <input type="text" class="form-control" name="fnationality"  value="<?php echo $singleData->f_nationality; ?>" >
               <input type="text" class="form-control" name="mname" value="<?php echo $singleData->m_name; ?>">
-              <input type="text" class="form-control" name="mnationality"  value="<?php echo $singleData->m_nationality; ?>">
               <input type="text" class="form-control" name="peraddr" value="<?php echo $singleData->permanent_addr; ?>">
               <input type="text" class="form-control" name="preaddr" value="<?php echo $singleData->present_addr; ?>">
+              <input type="text" class="form-control" name="monumber" value="<?php echo $singleData->mo_number; ?>">
           </div>
           
             <button type="submit" name ="edit" value="update" class="btn reg-btn" >Update</button>

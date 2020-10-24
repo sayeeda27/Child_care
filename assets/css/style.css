@@ -65,7 +65,7 @@ ul{
 .main-menu ul li a{
     color:#343434;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     font-family:'Poppins', sans-serif ;
     display: inline-block;
     padding-top: 44px;
@@ -76,8 +76,6 @@ ul{
 }
 .main-menu ul li a:hover{
     border-bottom: 1px solid #193a7e;
-    font-size: 19px;
-    font-weight: 400;
 
 }
 .main-menu .dropdown .drop_icon i{

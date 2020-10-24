@@ -2,7 +2,14 @@
 
 class Crud_model extends CI_Model {
 
-	
+	public function getdata($dob){
+        $this->db->where('d_o_b',$dob);
+        $query=$this->db->get('tbl_birth_register');
+        if($query){
+            return $query->row();
+        }
+      
+    }
 	public function getAllData()
 	{
         $query=$this->db->get('tbl_birth_register');

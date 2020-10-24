@@ -39,8 +39,8 @@
                                 </a>
 
                                 <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">User Login</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/logout') ?>">User Logout</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">Admin Login</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/logout') ?>">Admin Logout</a>
                                 </div>
                               </div>
                             </li>
