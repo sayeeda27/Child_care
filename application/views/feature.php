@@ -10,13 +10,14 @@
                 <div class="panel text-left">
                   <h1>About us</h1>
                   <p class="pt-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam
-                    voluptatum, id ex ratione omnis reiciendis possimus officiis.
+                  To ensure every child survives and thrives to reach their full potential,
+                   we must focus on improving care around the time of birth and the first week of life.
                   </p>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat
-                    ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic
-                    expedita nemo sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
+                  The high rates of preventable death and poor health and well-being of newborns and children under the age of five are indicators of the uneven coverage of life-saving interventions and, more broadly, of inadequate social and economic development. Poverty, poor nutrition and insufficient access to clean water and sanitation are all harmful factors, as is insufficient access to quality health services such as essential care for newborns.
+
+                  Health promotion, disease prevention services (such as vaccinations) and treatment of common childhood illnesses are essential if children are to thrive as well as survive.
+
                   </p>
                 </div>
               </div>

@@ -4,7 +4,7 @@
       <div class="col-xl-12">
         <div class="reg-title text-center">
             <h3>EPI Vaccine</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Vel mollitia ipsum quis <br>cumque quos sunt voluptates non, quaerat accusamus ipsam </p>
+            <p>Vaccines are only given to children after a long and careful review by scientists,<br> doctors, and healthcare professionals.</p>
         </div>
       </div>
     </div>
