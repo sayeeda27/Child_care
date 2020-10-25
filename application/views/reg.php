@@ -4,7 +4,7 @@
       <div class="col-xl-12">
         <div class="reg-title text-center">
             <h3>Birth Register</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Vel mollitia ipsum quis <br>cumque quos sunt voluptates non, quaerat accusamus ipsam </p>
+            <p>Insert the child birth details with correct information!!! </p>
         </div>
       </div>
     </div>

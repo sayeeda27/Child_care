@@ -57,6 +57,24 @@ ul{
     display: inline-block;
    
 }
+.logo{
+    margin: -11px 0;
+ }
+.logo h3{
+    color:  #193a7e;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
+   
+}
+ .logo a{
+    text-decoration: none;
+  }
+  
+.logo span{
+    color:  #193a7e;
+  }
 .main-menu ul li{
     display: inline-block;
     margin-left: 30px;
@@ -392,3 +410,285 @@ ul.footer-link li a{
 .reg-input input{
     width: 1120px;
 }
+/* user-deshboard */
+.user-panel {
+    z-index: 1;
+    position: fixed;
+    background: #4b4843;
+    padding: 30px;
+    width: 100%;
+    top: 0;
+    height: 70px;
+   
+  }
+  
+ .logo_sidebar{
+    margin: -11px 0;
+ }
+.user .logo_sidebar h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+   
+}
+.user .logo_sidebar a{
+    text-decoration: none;
+  }
+  
+.logo_sidebar span{
+    color: #19B3D3;
+  }
+.right_area{
+    margin: 10px;
+}
+.right_area a{
+    text-decoration: none;
+}
+  
+.logout_btn{
+    padding: 5px;
+    background: #19B3D3;
+   
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+  
+  }
+  
+.logout_btn:hover{
+    background: #0B87A6;
+  }
+  
+.sidebar{
+    z-index: 1;
+    top: 0;
+    background: #5a5854;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height:100%;
+    transition: 0.5s;
+    transition-property: left;
+   
+  }
+  
+  
+  
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 50px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+  }
+  
+.sidebar a:hover{
+    background: #19B3D3;
+  }
+  
+#check:checked ~ .sidebar{
+    left: -185px;
+    
+  }
+.content{
+     margin-top: 30px;
+    padding: 20px;
+    margin-left: 250px;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+   
+  }
+  
+  #check:checked ~ .content{
+    margin-left: 60px;
+  }
+  
+  
+  
+.content .card {
+   background: #4b4843;
+   opacity: .7;
+    color:#fff;
+    z-index: 1;
+    padding: 15px;
+    text-align: center;
+    margin: 150px;
+    margin-top: 360px;
+    
+  }
+  .content .card h2{
+    color:#19B3D3;
+    font-size: 62px;
+  }
+  .content .card p{
+    font-size: 25px;
+  }
+  
+  
+  /* admin-dashboard */
+
+.admin-panel{
+    z-index: 1;
+    position: fixed;
+    background: #4b4843;
+    padding: 30px;
+    width: 100%;
+    top: 0;
+    height: 70px;
+   
+  }
+.heading h1{
+    text-align: center;
+    color: #ccc;
+   
+  }
+  
+  .logo_sidebar h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+   
+  }
+  .logo_sidebar a{
+    text-decoration: none;
+  }
+  
+  .logo_sidebar span{
+    color: #19B3D3;
+  }
+  
+  .logout_btn{
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+  
+  }
+  
+  .logout_btn:hover{
+    background: #0B87A6;
+  }
+  
+.sidebar .admin{
+    z-index: 1;
+    top: 0;
+    background: #22242A;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height:100%;
+    transition: 0.5s;
+    transition-property: left;
+   
+  }
+  
+  .admin_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .sidebar .admin .admin_info .admin_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  } */
+ .admin_info i{
+     color:#19B3D3;
+     font-size: 62px;
+ } 
+  .sidebar .admin_info h4{
+    font-size: 30px;
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+.sidebar .admin a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 50px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+  }
+  
+  .sidebar a:hover{
+    background: #19B3D3;
+  }
+  
+  #check:checked ~ .sidebar .admin{
+    left: -185px;
+    
+  }
+  .content .admin{
+     margin-top: 40px;
+    padding: 20px;
+    margin-left: 250px;
+    background: url(dashbord1.jpg) no-repeat;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+   
+  }
+  
+  #check:checked ~ .content .admin{
+    margin-left: 60px;
+  }
+  
+  
+  
+  .content .admin .card {
+   background: black ;
+   opacity: .7;
+    color:#fff;
+    z-index: 1;
+    padding: 15px;
+    text-align: center;
+    /* margin: 150px; */
+    margin-top: 250px;
+    margin-left: 30px;
+    
+    
+  }
+  .content .admin .card h2{
+    font-size: 45px;
+  }
+  .content .admin .card p{
+    font-size: 35px;
+  }
+
+  
+  

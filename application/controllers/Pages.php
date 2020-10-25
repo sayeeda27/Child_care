@@ -12,7 +12,7 @@ class Pages extends CI_Controller
         $this->load->view('vaccine');
        // $this->load->view('reg');
         $this->load->view('news');
-        $this->load->view('alert');
+        //$this->load->view('alert');
         $this->load->view('templates/footer');
 		
 	}

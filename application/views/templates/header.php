@@ -14,12 +14,12 @@
 <body>
     
     <header>
-        <div class="header-area">
+        <div class="header-area fixed-top">
            <div class="container-fluid">
               <div class="row">
                  <div class="col-xl-3 d-flex align-items-center">
                   <div class="logo">
-                    <a href="<?php echo site_url('Pages/home') ?>"><img src="<?php echo base_url();?>assets/img/Child Care.png" alt=""></a>
+                    <a href="<?php echo site_url('Pages/home') ?>"><h3>Immunize <span>Bangladesh</span></h3></a>
                   </div>
                  </div>
                  <div class="col-xl-9">
@@ -30,7 +30,6 @@
                             <li><a href="<?php echo site_url('Pages/feature') ?>">About Us</a></li>
                             <li><a href="<?php echo site_url('Pages/news') ?>">News</a></li>
                             <li><a href="<?php echo site_url('Pages/service') ?>">Services</a></li>
-                            <li><a href="<?php echo site_url('Pages/alert') ?>">Send Alert</a></li>
                             <li>
                               <div class="dropdown dropdown-item-text ">
                                 <a class=" drop-btn drop_icon" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" 
@@ -40,7 +39,7 @@
 
                                 <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
                                   <a class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">Admin Login</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/logout') ?>">Admin Logout</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Login/index') ?>">User Login</a>
                                 </div>
                               </div>
                             </li>
@@ -53,9 +52,9 @@
 
                                 <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
                                   <a class="dropdown-item" href="<?php echo site_url('Pages/vaccine') ?>">EPI Vaccine</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Crud/index') ?>">Registered Baby</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">Login</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/logout') ?>">Logout</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Pages/feature') ?>">About us</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Pages/news') ?>">News</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Pages/service')?>">Services</a>
                                 </div>
                               </div>
                             </li>

@@ -22,7 +22,7 @@
           <div class="slider-inner">
             <h2>EPI Reminder</h2>
             <p>Boost your child immune system!!!</p>
-            <a  class="btn" href="<?php echo site_url('') ?>">Sign Up</a>
+            <a  class="btn" href="<?php echo site_url();?>">Sign Up</a>
           </div>
         </div>
     </div>

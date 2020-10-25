@@ -6,11 +6,11 @@ class Admin_login extends CI_Controller {
 	   public function __construct()
 	    {
             parent::__construct();
-            session_start();
-			if(!isset($_SESSION['admin']))
-				{
-				redirect('admin_login');
-				}
+            // session_start();
+			//  if(!isset($_SESSION['admin']))
+			//  	{
+			//  	redirect('admin_login');
+			//  	}
 			$this->load->model('Admin_model','data');
 
 	    }
@@ -31,7 +31,7 @@ class Admin_login extends CI_Controller {
         if(count($result)==1){
            session_start();
            $SESSION['admin']=$result[0];
-           redirect('Admin_crud');
+           redirect('Admin_dash');
         }
         
         else{
