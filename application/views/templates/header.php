@@ -14,7 +14,7 @@
 <body>
     
     <header>
-        <div class="header-area fixed-top">
+        <div class="header-area">
            <div class="container-fluid">
               <div class="row">
                  <div class="col-xl-3 d-flex align-items-center">
