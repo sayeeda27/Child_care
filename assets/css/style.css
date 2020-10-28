@@ -81,7 +81,7 @@ ul{
    
 }
 .main-menu ul li a{
-    color:#343434;
+    color:#1360f8;
     font-size: 18px;
     font-weight: 600;
     font-family:'Poppins', sans-serif ;
@@ -118,17 +118,19 @@ ul{
     
 }
 .slider-inner h2{
-    font-size: 72px;
+    font-size: 52px;
     font-weight: 600;
-    color: #2b2929;
+    color:#fff;
     margin-bottom: 15px;
 }
-.slider-inner p{
-    font-size: 15px;
-    color: #2b2929;
-    text-transform: capitalize;
-    margin-bottom: 50px;
-    font-weight: 600;
+.slide-inner h2 span{
+ color:#161515;
+}
+.home-btn{
+  border: 1px solid #193a7e;
+  color:#193a7e;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 /* feature-area */
@@ -214,6 +216,13 @@ ul{
 .service-wrapper:hover .btn{
     color: #fff;
 }
+/* view-service */
+.content1{
+    margin-bottom: 70px;
+}
+.service-video{
+    margin-left: 140px;
+}
 /* news-area */
 .news-area {
     margin-top: 130px;   
@@ -232,41 +241,8 @@ ul{
    padding-bottom: 30px;
    text-transform: capitalize;
 }
-.latest-news{
-    padding-top: 30px;
-    display: inline-block;
-}
-.news-content{
-  margin: 10px;
-}
-.news-content h3 a{
-    font-size: 20px;
-    color: #444;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-.news-content p{
-    font-size: 15px;
-    color: #2b2929;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 600;
-
-}
-.news-meta{
-    margin-bottom: 30px;
-
-}
-.meta-line{
-    background: #444;
-    height: 2px;
-    width: 30px;
-    display: inline-block;
-    position: relative;
-    top: -3px;
-    margin-left: 10px;
-
-
+ .card{
+    margin-left: 50px;
 }
 /* footer-top-area */
 .footer-widget{
@@ -570,7 +546,7 @@ ul.footer-link li a{
     text-decoration: none;
   }
   
-  .logo_sidebar span{
+ .logo_sidebar span{
     color: #19B3D3;
   }
   

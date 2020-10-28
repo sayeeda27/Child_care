@@ -1,5 +1,5 @@
 <div class="news-area pt-30 pb-30 mb">
-   <div class="container">
+   <div class="container-fluid">
         <div class="row">
            <div class="col-xl-12">
              <div class="area-title text-center">
@@ -8,58 +8,57 @@
              </div>
            </div>
         </div>
-        <div class="row">
-           <div class="col-xl-4">
-              <div class="latest-news">
-                 <div class="news-thumb">
-                    <a href="#"><img src="<?php echo base_url();?>assets/img/kid11.jpg" alt=""></a>
-                 </div>
-                 <div class="news-content">
-                   <h3><a href="#">how to increase child immune system</a></h3>
-                   <div class="news-meta">
-                     <span>07 May</span>
-                     <span class="meta-line"></span>
-                   </div>
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel mollitia ipsum quis cumque quos sunt voluptates non</p>
-                   <a href="#" class="btn">Continue Reading</a>
-                 </div>
-              </div>
-           </div>
-           <div class="col-xl-4">
-              <div class="latest-news">
-                 <div class="news-thumb">
-                    <a href="#"><img src="<?php echo base_url();?>assets/img/kid12.jpg" alt=""></a>
-                 </div>
-                 <div class="news-content">
-                   <h3><a href="#">how to increase child immune system</a></h3>
-                   <div class="news-meta">
-                     <span>07 May</span>
-                     <span class="meta-line"></span>
-                   </div>
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel mollitia ipsum quis cumque quos sunt voluptates non</p>
-                   <a href="#" class="btn">Continue Reading</a>
-                 </div>
-              </div>
-           </div>
-           <div class="col-xl-4">
-              <div class="latest-news">
-                 <div class="news-thumb">
-                    <a href="#"><img src="<?php echo base_url();?>assets/img/kid13.jpg" alt=""></a>
-                 </div>
-                 <div class="news-content">
-                   <h3><a href="#">how to increase child immune system</a></h3>
-                   <div class="news-meta">
-                     <span>07 May</span>
-                     <span class="meta-line"></span>
-                   </div>
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel mollitia ipsum quis cumque quos sunt voluptates non</p>
-                   <a href="#" class="btn">Continue Reading</a>
-                 </div>
-              </div>
-           </div>
+        <div class="row justify-content">
+        <div class="col-md-4">
+                    <div class="card shadow" style="width: 30rem; height:45rem ;" >
+                     <div class="inner">
+                     <img class="card-img-top"  src="<?php echo base_url();?>assets/img/news.jpg" alt="" style="height: 25rem;">
+                     </div>
+                     <div class="card-body text-center">
+                           <h5 class="card-title">How C-sections change a baby’s gut ecosystem</h5>
+                           <p class="card-text">
+                           Birth methods matter. The way we come into the world, may crucially shape the complex ecosystem 
+                           he human gut that influences our health for life, according to new research recently published
+                           in the scientific journal Nature....
+                           </p>
+                           <a href="" class="btn">View News...</a>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 30rem; height:45rem ;">
+                    <div class="inner">
+                    <img class="card-img-top" src="<?php echo base_url();?>assets/img/news1.jpg" alt="" style="height: 25rem;">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Disruption of child vaccination in South Asia poses an urgent threat to children’s health – UNICEF</h5>
+                        <p class="card-text">
+                        South Asia could face yet another health emergency if children across the region do not receive
+                         their life-saving vaccine shots, UNICEF warned today.
+                       .Almost all of them, or 97 per cent, live in India,
+                         Pakistan and Afghanistan..
+                        </p>
+                        <a href="" class="btn">View News...</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 30rem; height:45rem ;">
+                    <div class="inner">
+                    <img class="card-img-top" src="<?php echo base_url();?>assets/img/news2.jpg" alt="" style="height: 25rem;">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">UNICEF names cricket star Mushfiqur Rahim as a new National Ambassador for children’s rights</h5>
+                        <p class="card-text">
+                        Celebrated cricket player and former captain of the national team Mushfiqur Rahim has been
+                         named as UNICEF’s newest National Ambassador in Bangladesh. 
+                          “Child rights and the work of UNICEF are close to my heart, 
+                          lend my voice.
+                        </p>
+                        <a href="" class="btn">View News...</a>
+                    </div>
+                    </div>
+                </div>
         </div>
    </div>
 </div>

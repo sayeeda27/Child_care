@@ -28,6 +28,13 @@ class Pages extends CI_Controller
         $this->load->view('service');
         $this->load->view('templates/footer');	
         }
+        public function viewservice()
+	{
+        $this->load->view('templates/header');
+        $this->load->view('home');
+        $this->load->view('view_service');
+        $this->load->view('templates/footer');	
+        }
         public function news()
 	{
         $this->load->view('templates/header');
