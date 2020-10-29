@@ -34,6 +34,7 @@ class Login_model extends CI_Model
      if($password === $store_password)
      {
       $this->session->set_userdata('id_user', $row->id);
+      
      }
      else
      {

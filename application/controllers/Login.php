@@ -6,10 +6,10 @@ class Login extends CI_Controller {
 	   public function __construct()
 	    {
             parent::__construct();
-            if($this->session->userdata('id_user'))
-				{
-				redirect('Private_area');
-				}
+            // if($this->session->userdata('id_user'))
+			// 	{
+			// 	redirect('Private_area');
+			// 	}
 	  	
             $this->load->library('encryption');
 	        $this->load->model('login_model');

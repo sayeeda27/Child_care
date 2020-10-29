@@ -373,7 +373,7 @@ ul.footer-link li a{
     margin-top: 60px;
 }
 .log-form input{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     border-radius: 10px;
     border-color:#505cfd;
     width: 500px;
@@ -385,6 +385,9 @@ ul.footer-link li a{
 }
 .reg-input input{
     width: 1120px;
+}
+.login-btn{
+  margin-top: 30px;
 }
 /* user-deshboard */
 .user-panel {
