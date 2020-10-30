@@ -14,8 +14,8 @@
 <body>
     
     <header>
-        <div class="header-area">
-           <div class="container-fluid">
+        <div class="header-area ">
+           <div class="container-fluid  fixed-top">
               <div class="row">
                  <div class="col-xl-3 d-flex align-items-center">
                   <div class="logo">
@@ -38,8 +38,8 @@
                                 </a>
 
                                 <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">Admin Login</a>
-                                  <a class="dropdown-item" href="<?php echo site_url('Login/index') ?>">User Login</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Admin_login/index');?>">Admin Login</a>
+                                  <a class="dropdown-item" href="<?php echo site_url('Login/index'); ?>">User Login</a>
                                 </div>
                               </div>
                             </li>

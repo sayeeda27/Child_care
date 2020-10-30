@@ -5,9 +5,10 @@ class Forget_pass extends CI_Controller
 	{
 		/*call CodeIgniter's default Constructor*/
 		parent::__construct();
-	
+		$this->load->library('session');
 		/*load Model*/
 		//$this->load->library('email', NULL, 'ci_email');
+		$this->load->library('encryption');
 	}
 	
    public function forgot_pass()
@@ -49,9 +50,10 @@ class Forget_pass extends CI_Controller
 				$this->email->subject('Reset password link');
 				$this->email->message($message);
 				if($this->email->send()){
-					$this->session->set_flashdata('message', 'Check in your email for reset password');
-					$this->session->flashdata('message');
-					
+					//var_dump($this->session);
+					$this->session->set_flashdata('confirmation_message', 'Check in your email for reset password');
+					$this->session->flashdata('confirmation_message');
+					redirect(base_url('Forget_pass/forgot_pass'));
 				}
 
 		}
@@ -68,11 +70,12 @@ class Forget_pass extends CI_Controller
 		$this->load->view('resetpass');
 	}
 	public function updatepass(){
-		 $_SESSION['tokan'];
+		// $_SESSION['tokan'];
 		$data=$this->input->post();
 		if($data['user_password']==$data['us_password']){
-			$data['user_password']=md5($data['user_password']);
-			$this->db->query("UPDATE tbl_user SET us_password='".$data['user_password']."' WHERE id_user='".$data['userid']."'");
+	
+			$encrypted_password = $this->encryption->encrypt($data['user_password']);
+			$this->db->query("UPDATE tbl_user SET us_password='".$encrypted_password."' WHERE id_user='".$data['userid']."'");
 			redirect('login');
 		}
 	}

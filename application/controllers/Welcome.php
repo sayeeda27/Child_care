@@ -10,7 +10,7 @@ class Welcome extends CI_Controller {
 				{
 				redirect('private_area');
 				}
-	  	
+	  	    $this->load->library('session');
 			$this->load->library('encryption');
 			$this->load->model('Regi_model');
 
@@ -71,8 +71,8 @@ class Welcome extends CI_Controller {
 					
 				   if($this->email->send())
 				   {
-					$this->session->set_flashdata('message', 'Check in your email for email verification mail');
-					$this->session->flashdata('message');
+					$this->session->set_flashdata('signup_message', 'Check in your email for email verification mail');
+					$this->session->flashdata('signup_message');
 					redirect('welcome');
 			   
 				   }
@@ -93,7 +93,7 @@ class Welcome extends CI_Controller {
 		if($this->uri->segment(3))
 		{
 			$verification_key=$this->uri->segment(3);
-			print_r($verification_key);
+			//print_r($verification_key);
 			if($this->Regi_model->verify_email($verification_key))
 			{
 				$data['message'] = '<h1 align="center">Your Email has been successfully verified, now you can login from <a href="'.base_url().'Login">here</a></h1>';

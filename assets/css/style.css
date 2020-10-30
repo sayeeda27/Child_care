@@ -48,17 +48,15 @@ ul{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 999;
+    /* padding: 5px;
+    display: inline-block; */
    
    
 } 
-.header-area{
-    padding: 0 10px;
-    display: inline-block;
-   
-}
 .logo{
     margin: -11px 0;
+    padding-top: 40px;
  }
 .logo h3{
     color:  #193a7e;
@@ -83,11 +81,11 @@ ul{
 .main-menu ul li a{
     color:#1360f8;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 900;
     font-family:'Poppins', sans-serif ;
     display: inline-block;
-    padding-top: 44px;
-    padding-bottom: 10px;
+     padding-top: 40px;
+     padding-bottom: 10px; 
     line-height: 1;
     text-decoration: none;
    

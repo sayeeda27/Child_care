@@ -40,17 +40,21 @@ class Message extends CI_Controller {
                 $mobile_num=$single_user->mo_number;
 
                 if($day ==42 || $day== 70 || $day==98){
-                    $message="child care testing ".$day;
+                    $message="Hello Sir/Maa'm,  this is a reminder for you that your child vaccination date is tomorrow. 
+                    Thank you for taking IMMUNIZE BANGLADESH'S service... ".$day;
 
                 }
                 else if($day==270 ){
-                    $message="child care testing ".$day;
+                    $message="Hello Sir/Maa'm,  this is a reminder for you that your child vaccination date is tomorrow. 
+                    Thank you for taking IMMUNIZE BANGLADESH'S service... ".$day;
                 }
                 else if($day==450 ){
-                    $message="child care testing ".$day;
+                    $message="Hello Sir/Maa'm,  this is a reminder for you that your child vaccination date is tomorrow. 
+                    Thank you for taking IMMUNIZE BANGLADESH'S service... ".$day;
                 }
                 else{
-                    $message="child care testing BCG ";
+                    $message="Hello Sir/Maa'm,  this is a reminder for you that your child vaccination date is tomorrow. 
+                    Thank you for taking IMMUNIZE BANGLADESH'S service...";
                 }
 
                 

@@ -6,11 +6,13 @@ class Admin_login extends CI_Controller {
 	   public function __construct()
 	    {
             parent::__construct();
-            // session_start();
-			//  if(!isset($_SESSION['admin']))
-			//  	{
-			//  	redirect('admin_login');
-			//  	}
+          
+            //   session_start();
+			//    if(!isset($_SESSION['admin']))
+			//    	{
+			//    	redirect('admin_login');
+            //        }
+             $this->load->library('session');
 			$this->load->model('Admin_model','data');
 
 	    }
@@ -19,9 +21,8 @@ class Admin_login extends CI_Controller {
 	{
 		
 		 $this->load->view('templates/header');
-
 		 $this->load->view('admin_login');
-		 $this->load->view('templates/footer');
+		 //$this->load->view('templates/footer');
 		
     }
     public function check_login(){

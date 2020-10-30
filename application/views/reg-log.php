@@ -8,6 +8,13 @@
       </div>
     </div>
      <div class="log-form">
+     <?php
+        if($this->session->flashdata('signup_message')){
+          echo '<div class="alert alert-succeess">
+                   '.$this->session->flashdata("signup_message").'
+               </div>';
+        }
+     ?>
         <form method="post" action="<?php echo base_url();?>Welcome/validation">
                <input type="text" class="form-control" name="user_name" placeholder="user name" value="<?php echo set_value('user_name');?>">
                 <span class="text-danger"><?php echo form_error('user_name'); ?></span>
