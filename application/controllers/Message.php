@@ -5,6 +5,7 @@ class Message extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
+        $this->load->library('session');
         $this->load->model('Crud_model');
 
     }
@@ -16,7 +17,7 @@ class Message extends CI_Controller {
          $this->load->view('templates/header');
                 $this->load->view('alert');
                 $this->load->view('templates/footer');
-		  $token = "a39a0606307a9dc6f96cf1def3ea34f8";
+		  $token = "74c480fb569d22c1d158ba5e3a44cd06";
             $message = "";
 
             $url = "http://api.greenweb.com.bd/api2.php";
@@ -59,7 +60,6 @@ class Message extends CI_Controller {
 
                 
                 if( $mobile_num==$mob){
-                   return;
                     $data= array(
                         'to'=>"$mob",
                         'message'=>"$message",
@@ -73,7 +73,9 @@ class Message extends CI_Controller {
                         $smsresult = curl_exec($ch);
         
                     if($smsresult) {
-                        redirect('message');
+                        $this->session->set_flashdata('message_sent', 'Message sent');
+					    $this->session->flashdata('message_sent');
+                        redirect(base_url('Message/send_sms'));
                     }
                 }
 

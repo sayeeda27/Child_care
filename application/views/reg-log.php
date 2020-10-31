@@ -10,7 +10,7 @@
      <div class="log-form">
      <?php
         if($this->session->flashdata('signup_message')){
-          echo '<div class="alert alert-succeess">
+          echo '<div class="alert alert-success">
                    '.$this->session->flashdata("signup_message").'
                </div>';
         }

@@ -10,7 +10,7 @@
      <div class="log-form">
        <?php
            if($this->session->flashdata('message')){
-            echo '<div class="alert alert-succeess">
+            echo '<div class="alert alert-danger">
                      '.$this->session->flashdata("message").'
                  </div>';
           }

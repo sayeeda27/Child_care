@@ -13,7 +13,7 @@
             <input type="password" class="form-control" name="user_password" placeholder="password" required="required">
             <input type="password" class="form-control" name="us_password" placeholder="confirm password" required="required">
            
-            <input type="hidden" class="form-control" name="userid" value="11" required="required">
+            <input type="hidden" class="form-control" name="userid" value="12" required="required">
             <button type="submit" name ="updatepass" class="btn " value="update password" >Update passwords</button>
                 
         </form>
