@@ -717,6 +717,7 @@ ul.footer-link li a{
   background-size: cover;
   background-position: center center;
   opacity: .7;
+  margin: 0;
   
 }
 .image-card{
@@ -728,6 +729,7 @@ ul.footer-link li a{
   display: inline-block;
   text-align: center;
   padding: 40px;
+  opacity: .8;
  
 }
 .image-card h2{
