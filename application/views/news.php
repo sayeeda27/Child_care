@@ -21,7 +21,7 @@
                            he human gut that influences our health for life, according to new research recently published
                            in the scientific journal Nature....
                            </p>
-                           <a href="" class="btn">View News...</a>
+                           <a href="<?php echo site_url('Pages/viewnews') ?>" class="btn">View News...</a>
                      </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                        .Almost all of them, or 97 per cent, live in India,
                          Pakistan and Afghanistan..
                         </p>
-                        <a href="" class="btn">View News...</a>
+                        <a href="<?php echo site_url('Pages/viewnews') ?>" class="btn">View News...</a>
                     </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                           “Child rights and the work of UNICEF are close to my heart, 
                           lend my voice.
                         </p>
-                        <a href="" class="btn">View News...</a>
+                        <a href="<?php echo site_url('Pages/viewnews') ?>" class="btn">View News...</a>
                     </div>
                     </div>
                 </div>

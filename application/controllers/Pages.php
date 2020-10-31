@@ -12,7 +12,7 @@ class Pages extends CI_Controller
         $this->load->view('vaccine');
        // $this->load->view('reg');
         $this->load->view('news');
-        //$this->load->view('alert');
+        $this->load->view('bg_image');
         $this->load->view('templates/footer');
 		
 	}
@@ -39,6 +39,12 @@ class Pages extends CI_Controller
 	{
         $this->load->view('templates/header');
         $this->load->view('news');
+        $this->load->view('templates/footer');	
+        }
+        public function viewnews()
+	{
+        $this->load->view('templates/header');
+        $this->load->view('view_news');
         $this->load->view('templates/footer');	
         }
         public function alert()
