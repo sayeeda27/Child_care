@@ -1,13 +1,10 @@
-<div class="reg-area text-center mb">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-12">
-        <div class="reg-title text-center">
+<div class="container-fluid">
+   <div class="reg-area11 text-center ">
+     <div class="user-reg-area1">
+        <div class="user-reg-title text-center">
             <h3>SignUp</h3>
         </div>
-      </div>
-    </div>
-     <div class="log-form">
+     <div class="user-log-form">
      <?php
         if($this->session->flashdata('signup_message')){
           echo '<div class="alert alert-success">
@@ -27,5 +24,13 @@
                 
         </form>
      </div>
-  </div>
+     </div>
+
+     <div class="user-reg-img">
+
+     
+      </div>
+
+
+ </div>
 </div>

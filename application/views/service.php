@@ -1,4 +1,4 @@
-<div class="service-area pt-30 pb-30 mb">
+<div class="service-area  pb-30 mb">
     <div class="container">
     <div class="row">
            <div class="col-xl-12">
