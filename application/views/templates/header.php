@@ -37,7 +37,7 @@
                 <i class="fas fa-user-circle"></i>
                 </a>
                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                  <a class="nav-link" class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">Admin Login</a>
+                  <!-- <a class="nav-link" class="dropdown-item" href="<?php echo site_url('Admin_login/index') ?>">Admin Login</a> -->
                   <a class="nav-link" class="dropdown-item" href="<?php echo site_url('Login/index') ?>">User Login</a>
                 </div>
               </div>

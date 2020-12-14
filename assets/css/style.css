@@ -91,57 +91,7 @@ ul{
 .logo .logspan{
   color:#10ac84;
 }
-/* header area 
-.header-area{
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    /* padding: 5px;
-    display: inline-block; */
-   
-   
- /*
-.logo{
-    margin: -11px 0;
-    padding-top: 40px;
- }
-.logo h3{
-    color:  #193a7e;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: 900;
-   
-}
 
-  
-.logo span{
-    color:  #193a7e;
-  }/*
-.main-menu ul li{
-    display: inline-block;
-    margin-left: 30px;
-   
-}
-.main-menu ul li a{
-    color:#1360f8;
-    font-size: 18px;
-    font-weight: 900;
-    font-family:'Poppins', sans-serif ;
-    display: inline-block;
-     padding-top: 40px;
-     padding-bottom: 10px; 
-    line-height: 1;
-    text-decoration: none;
-   
-}
-.main-menu ul li a:hover{
-    border-bottom: 1px solid #193a7e;
-
-}*/
 .navbar .navbar-nav .dropdown i{
     font-size: 23px;
 }
@@ -375,19 +325,17 @@ ul.footer-link li a{
 .alert-area{
     margin-top: 300px;
 }
-.alert-form input{
-    margin-bottom: 70px;
-    width: 600px;
-    margin-left: 290px;
-    text-align: center;
-    border-radius: 10px;
-    border-color:#18866b;
+.alert_btn{
+  padding:30px;
+  margin-bottom: 170px;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-transform:uppercase;
+  font-weight: 900;
 }
-.alert-form input::placeholder{
-      color: #000;
-}
+
 /* user-reg-area */
-.reg-area11 {
+.reg-area {
   height: 700px;
  
   
@@ -426,28 +374,33 @@ ul.footer-link li a{
   margin-top: 25px;
 }
 .user-log-form input{
-  margin:10px 0px 40px 650px;
-  border-radius: 10px;
-  border-color:#1c7549;
+  margin-bottom: 25px;
+  margin-left: 650px;
   width: 500px;
+  text-decoration: none;
+  outline:none;
+  border: 0;
+  border-bottom: 1px solid #051d15 ;
+  
   
 }
 
 .user-log-form input::placeholder{
   color: #033500;
-  
-  text-align: center;
+  text-align:left;
 }
 .user-log-form button{
   margin-left:600px ;
   margin-top: 7px;
+  width: 300px;
+  color: #051d15;
 
   
 }
 /*user reg end*/
 /* reg-area */
 .reg-area {
-  margin-top: 110px; 
+  margin-top: 100px; 
    
 }
 .reg-title{
@@ -460,17 +413,24 @@ ul.footer-link li a{
   margin-top: 10px;
 }
 .reg-title p{
- padding-bottom: 30px;
+ padding-bottom: 15px;
  text-transform: capitalize;
 }
 .reg-form{
-  padding-top: 70px;
+  padding-top: 30px;
 }
 .reg-form input{
-  margin-bottom: 70px;
-  border-radius: 10px;
-  border-color:#1c7549;
-  width: 550px;
+  margin-bottom: 25px;
+  
+  width: 500px;
+  text-decoration: none;
+  outline:none;
+  border: 0;
+  border-bottom: 1px solid #051d15 ;
+  
+}
+.reg-form input::placeholder{
+  color: #000;
 }
 
 .reg-form .reg-btn{
@@ -498,23 +458,26 @@ ul.footer-link li a{
   font-size: 18px;
 }
 .log-form input{
-    margin-bottom: 40px;
-    border-radius: 10px;
-    border-color:#1c7549;
-    width: 500px;
-    margin-left: 300px;
+  margin-bottom: 25px;
+  margin-left: 300px;
+  width: 500px;
+  text-decoration: none;
+  outline:none;
+  border: 0;
+  border-bottom: 1px solid #051d15 ;
 }
 
 .log-form input::placeholder{
     color: #033500;
     
-    text-align: center;
+    text-align:left;
 }
 .reg-input input{
     width: 1120px;
 }
 .login-btn{
   margin-top: 30px;
+  width: 300px;
 }
 /* user-deshboard */
 .user-panel {

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid text-center">
    <div class="reg-area11 text-center ">
      <div class="user-reg-area1">
         <div class="user-reg-title text-center">
@@ -7,7 +7,7 @@
      <div class="user-log-form">
      <?php
         if($this->session->flashdata('signup_message')){
-          echo '<div class="alert alert-success">
+          echo '<div class="alert alert-success text-center">
                    '.$this->session->flashdata("signup_message").'
                </div>';
         }
